@@ -1,7 +1,7 @@
 # Naija ASR Benchmark
 
 <p align="center">
-  <img src="header.webp" alt="Naija ASR Benchmark" width="600" style="border: 2px solid #ccc; border-radius: 8px;">
+  <img src="header.webp" alt="Naija ASR Benchmark" width="100%" style="border: 2px solid #ccc; border-radius: 8px; max-width: 900px;">
 </p>
 
 [![Kaggle Benchmarking Challenge](https://img.shields.io/badge/Kaggle-Benchmarking%20Challenge-blue)](https://dev.to/challenges/kaggle-2026-09-23)
