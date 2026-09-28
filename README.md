@@ -1,5 +1,9 @@
 # Naija ASR Benchmark
 
+<p align="center">
+  <img src="header.webp" alt="Naija ASR Benchmark" width="600" style="border: 2px solid #ccc; border-radius: 8px;">
+</p>
+
 [![Kaggle Benchmarking Challenge](https://img.shields.io/badge/Kaggle-Benchmarking%20Challenge-blue)](https://dev.to/challenges/kaggle-2026-09-23)
 
 A dialect-aware ASR error taxonomy benchmark for Nigerian English and Pidgin — measuring whether standard Word Error Rate (WER) overestimates real ASR failures by penalizing faithful dialect transcription.
