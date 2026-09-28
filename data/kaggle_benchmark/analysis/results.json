@@ -1,0 +1,360 @@
+{
+  "metrics": {
+    "naija-finetuned::hausa": {
+      "model_id": "naija-finetuned",
+      "accent_background": "hausa",
+      "total_words": 1864,
+      "total_errors": 232,
+      "hallucinations": 229,
+      "faithful_dialect_variants": 3,
+      "raw_wer": 0.1245,
+      "faithful_wer": 0.1229,
+      "dialect_penalty": 0.0016,
+      "hallucination_rate": 0.9871,
+      "normalization_overcorrection_rate": 0.048,
+      "cause_distribution": {
+        "phonetic": 203,
+        "noise": 15,
+        "dialect_normalization": 11
+      }
+    },
+    "naija-finetuned::igbo": {
+      "model_id": "naija-finetuned",
+      "accent_background": "igbo",
+      "total_words": 2104,
+      "total_errors": 220,
+      "hallucinations": 211,
+      "faithful_dialect_variants": 9,
+      "raw_wer": 0.1046,
+      "faithful_wer": 0.1003,
+      "dialect_penalty": 0.0043,
+      "hallucination_rate": 0.9591,
+      "normalization_overcorrection_rate": 0.1469,
+      "cause_distribution": {
+        "phonetic": 168,
+        "dialect_normalization": 31,
+        "noise": 12
+      }
+    },
+    "naija-finetuned::multilingual": {
+      "model_id": "naija-finetuned",
+      "accent_background": "multilingual",
+      "total_words": 549,
+      "total_errors": 38,
+      "hallucinations": 37,
+      "faithful_dialect_variants": 1,
+      "raw_wer": 0.0692,
+      "faithful_wer": 0.0674,
+      "dialect_penalty": 0.0018,
+      "hallucination_rate": 0.9737,
+      "normalization_overcorrection_rate": 0.027,
+      "cause_distribution": {
+        "phonetic": 35,
+        "noise": 1,
+        "dialect_normalization": 1
+      }
+    },
+    "naija-finetuned::pidgin": {
+      "model_id": "naija-finetuned",
+      "accent_background": "pidgin",
+      "total_words": 1385,
+      "total_errors": 130,
+      "hallucinations": 128,
+      "faithful_dialect_variants": 2,
+      "raw_wer": 0.0939,
+      "faithful_wer": 0.0924,
+      "dialect_penalty": 0.0014,
+      "hallucination_rate": 0.9846,
+      "normalization_overcorrection_rate": 0.0703,
+      "cause_distribution": {
+        "phonetic": 106,
+        "noise": 13,
+        "dialect_normalization": 9
+      }
+    },
+    "naija-finetuned::yoruba": {
+      "model_id": "naija-finetuned",
+      "accent_background": "yoruba",
+      "total_words": 1894,
+      "total_errors": 246,
+      "hallucinations": 238,
+      "faithful_dialect_variants": 8,
+      "raw_wer": 0.1299,
+      "faithful_wer": 0.1257,
+      "dialect_penalty": 0.0042,
+      "hallucination_rate": 0.9675,
+      "normalization_overcorrection_rate": 0.0546,
+      "cause_distribution": {
+        "phonetic": 218,
+        "dialect_normalization": 13,
+        "noise": 7
+      }
+    },
+    "whisper-large-v3::hausa": {
+      "model_id": "whisper-large-v3",
+      "accent_background": "hausa",
+      "total_words": 1889,
+      "total_errors": 811,
+      "hallucinations": 811,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4293,
+      "faithful_wer": 0.4293,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.1504,
+      "cause_distribution": {
+        "phonetic": 649,
+        "dialect_normalization": 122,
+        "noise": 40
+      }
+    },
+    "whisper-large-v3::igbo": {
+      "model_id": "whisper-large-v3",
+      "accent_background": "igbo",
+      "total_words": 2117,
+      "total_errors": 893,
+      "hallucinations": 893,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4218,
+      "faithful_wer": 0.4218,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.2195,
+      "cause_distribution": {
+        "phonetic": 672,
+        "dialect_normalization": 196,
+        "noise": 25
+      }
+    },
+    "whisper-large-v3::multilingual": {
+      "model_id": "whisper-large-v3",
+      "accent_background": "multilingual",
+      "total_words": 559,
+      "total_errors": 204,
+      "hallucinations": 204,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.3649,
+      "faithful_wer": 0.3649,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.2157,
+      "cause_distribution": {
+        "phonetic": 149,
+        "dialect_normalization": 44,
+        "noise": 11
+      }
+    },
+    "whisper-large-v3::pidgin": {
+      "model_id": "whisper-large-v3",
+      "accent_background": "pidgin",
+      "total_words": 1406,
+      "total_errors": 567,
+      "hallucinations": 567,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4033,
+      "faithful_wer": 0.4033,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.2187,
+      "cause_distribution": {
+        "phonetic": 409,
+        "dialect_normalization": 124,
+        "noise": 34
+      }
+    },
+    "whisper-large-v3::yoruba": {
+      "model_id": "whisper-large-v3",
+      "accent_background": "yoruba",
+      "total_words": 1923,
+      "total_errors": 834,
+      "hallucinations": 834,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4337,
+      "faithful_wer": 0.4337,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.1499,
+      "cause_distribution": {
+        "phonetic": 673,
+        "dialect_normalization": 125,
+        "noise": 36
+      }
+    },
+    "whisper-small::hausa": {
+      "model_id": "whisper-small",
+      "accent_background": "hausa",
+      "total_words": 1906,
+      "total_errors": 950,
+      "hallucinations": 950,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4984,
+      "faithful_wer": 0.4984,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.12,
+      "cause_distribution": {
+        "phonetic": 779,
+        "dialect_normalization": 114,
+        "noise": 57
+      }
+    },
+    "whisper-small::igbo": {
+      "model_id": "whisper-small",
+      "accent_background": "igbo",
+      "total_words": 2126,
+      "total_errors": 1059,
+      "hallucinations": 1059,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4981,
+      "faithful_wer": 0.4981,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.1605,
+      "cause_distribution": {
+        "phonetic": 855,
+        "dialect_normalization": 170,
+        "noise": 34
+      }
+    },
+    "whisper-small::multilingual": {
+      "model_id": "whisper-small",
+      "accent_background": "multilingual",
+      "total_words": 557,
+      "total_errors": 231,
+      "hallucinations": 231,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4147,
+      "faithful_wer": 0.4147,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.1515,
+      "cause_distribution": {
+        "phonetic": 187,
+        "dialect_normalization": 35,
+        "noise": 9
+      }
+    },
+    "whisper-small::pidgin": {
+      "model_id": "whisper-small",
+      "accent_background": "pidgin",
+      "total_words": 1415,
+      "total_errors": 641,
+      "hallucinations": 641,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.453,
+      "faithful_wer": 0.453,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.1732,
+      "cause_distribution": {
+        "phonetic": 487,
+        "dialect_normalization": 111,
+        "noise": 43
+      }
+    },
+    "whisper-small::yoruba": {
+      "model_id": "whisper-small",
+      "accent_background": "yoruba",
+      "total_words": 1927,
+      "total_errors": 926,
+      "hallucinations": 926,
+      "faithful_dialect_variants": 0,
+      "raw_wer": 0.4805,
+      "faithful_wer": 0.4805,
+      "dialect_penalty": 0.0,
+      "hallucination_rate": 1.0,
+      "normalization_overcorrection_rate": 0.1393,
+      "cause_distribution": {
+        "phonetic": 757,
+        "dialect_normalization": 129,
+        "noise": 40
+      }
+    }
+  },
+  "summary": {
+    "models": {
+      "naija-finetuned": {
+        "total_words": 7796,
+        "total_errors": 866,
+        "hallucinations": 843,
+        "faithful_dialect_variants": 23,
+        "raw_wer": 0.1111,
+        "faithful_wer": 0.1081,
+        "dialect_penalty": 0.003,
+        "hallucination_rate": 0.9734,
+        "dialects": {
+          "hausa": 0.1245,
+          "igbo": 0.1046,
+          "multilingual": 0.0692,
+          "pidgin": 0.0939,
+          "yoruba": 0.1299
+        },
+        "dialect_penalties": {
+          "hausa": 0.0016,
+          "igbo": 0.0043,
+          "multilingual": 0.0018,
+          "pidgin": 0.0014,
+          "yoruba": 0.0042
+        }
+      },
+      "whisper-large-v3": {
+        "total_words": 7894,
+        "total_errors": 3309,
+        "hallucinations": 3309,
+        "faithful_dialect_variants": 0,
+        "raw_wer": 0.4192,
+        "faithful_wer": 0.4192,
+        "dialect_penalty": 0.0,
+        "hallucination_rate": 1.0,
+        "dialects": {
+          "hausa": 0.4293,
+          "igbo": 0.4218,
+          "multilingual": 0.3649,
+          "pidgin": 0.4033,
+          "yoruba": 0.4337
+        },
+        "dialect_penalties": {
+          "hausa": 0.0,
+          "igbo": 0.0,
+          "multilingual": 0.0,
+          "pidgin": 0.0,
+          "yoruba": 0.0
+        }
+      },
+      "whisper-small": {
+        "total_words": 7931,
+        "total_errors": 3807,
+        "hallucinations": 3807,
+        "faithful_dialect_variants": 0,
+        "raw_wer": 0.48,
+        "faithful_wer": 0.48,
+        "dialect_penalty": 0.0,
+        "hallucination_rate": 1.0,
+        "dialects": {
+          "hausa": 0.4984,
+          "igbo": 0.4981,
+          "multilingual": 0.4147,
+          "pidgin": 0.453,
+          "yoruba": 0.4805
+        },
+        "dialect_penalties": {
+          "hausa": 0.0,
+          "igbo": 0.0,
+          "multilingual": 0.0,
+          "pidgin": 0.0,
+          "yoruba": 0.0
+        }
+      }
+    },
+    "overall": {
+      "total_words": 23621,
+      "total_errors": 7982,
+      "hallucinations": 7959,
+      "faithful_dialect_variants": 23,
+      "raw_wer": 0.3379,
+      "faithful_wer": 0.3369,
+      "dialect_penalty": 0.001,
+      "hallucination_rate": 0.9971
+    }
+  }
+}

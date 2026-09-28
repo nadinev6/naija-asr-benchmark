@@ -1,0 +1,4 @@
+model_id,samples,average_wer,total_errors
+naija-finetuned,500,0.1179,866
+whisper-large-v3,500,0.4678,3309
+whisper-small,500,0.5297,3807

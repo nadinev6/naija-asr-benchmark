@@ -1,0 +1,145 @@
+title: Dialect-Aware ASR Error Taxonomy — Nigerian English & Pidgin
+subtitle: "Classify WER errors: faithful dialect variant vs. phonetic hallucination"
+description: >
+  A benchmark dataset for measuring how automatic speech recognition (ASR) systems
+  handle Nigerian English and Pidgin dialects. Contains 500 transcribed audio samples
+  across 5 ethnolinguistic backgrounds (Igbo, Yoruba, Hausa, Pidgin, multilingual),
+  with reference transcripts and ASR outputs from 3 models. The annotation provides
+  word-level error classification distinguishing faithful dialect transcription from
+  phonetic hallucination.
+
+licenses:
+  - name: CC-BY-4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+
+keywords:
+  - asr
+  - speech-recognition
+  - nigerian-english
+  - pidgin
+  - dialect
+  - wer
+  - whisper
+
+task_categories:
+  - automatic-speech-recognition
+  - text-classification
+
+task_ids:
+  - speech-recognition
+  - multi-class-classification
+
+size_categories:
+  - n<1000
+
+language:
+  - en-NG
+  - pcm
+
+pretty_name: Dialect-Aware ASR Error Taxonomy — Nigerian English
+
+tags:
+  - accent-labs
+  - nigerian-english
+  - naija
+  - whisper
+  - dialect
+
+paper: "https://dev.to/challenges/kaggle-2026-09-23"
+
+configs:
+  - config_name: default
+    data_files:
+      - split: train
+        path: test_samples.csv
+
+# Dataset structure
+schema:
+  test_samples:
+    columns:
+      - name: sample_id
+        type: string
+        description: Unique identifier matching the audio filename and references
+      - name: audio_path
+        type: string
+        description: Path to the FLAC audio file
+      - name: text
+        type: string
+        description: Reference (ground truth) transcript
+      - name: speaker_id
+        type: string
+        description: Anonymized speaker identifier
+      - name: accent_background
+        type: string
+        description: Ethnolinguistic background label (igbo, yoruba, hausa, pidgin, multilingual)
+      - name: ethnolinguistic_group
+        type: string
+        description: Full ethnolinguistic group name
+      - name: register
+        type: string
+        description: Speech register (conversational, formal, health, everyday)
+      - name: duration_s
+        type: float
+        description: Audio duration in seconds
+      - name: snr_estimate
+        type: float
+        description: Signal-to-noise ratio estimate in dB
+      - name: noise_type
+        type: string
+        description: Noise condition (clean, background, overlap, clipping, accent)
+      - name: language
+        type: string
+        description: BCP-47 language code
+
+# Model outputs included
+model_outputs:
+  - model_id: whisper-large-v3
+    model_name: OpenAI Whisper Large v3
+    description: Zero-shot general-purpose ASR baseline (1540M parameters)
+    file: model_outputs/whisper-large-v3_hypotheses.csv
+  - model_id: whisper-small
+    model_name: OpenAI Whisper Small
+    description: Lightweight baseline (244M parameters)
+    file: model_outputs/whisper-small_hypotheses.csv
+  - model_id: naija-finetuned
+    model_name: Accent Labs fine-tuned Whisper
+    description: Domain-adapted model trained on Nigerian English speech data (1540M parameters)
+    file: model_outputs/naija-finetuned_hypotheses.csv
+
+# Annotation schema
+annotations:
+  guide: annotations/annotation_guide.md
+  schema:
+    word_alignment.csv:
+      columns:
+        - name: sample_id
+          type: string
+        - name: model_id
+          type: string
+        - name: accent_background
+          type: string
+        - name: word_index
+          type: integer
+        - name: ref_word
+          type: string
+        - name: hyp_word
+          type: string
+        - name: wer_op
+          type: string
+          description: "WER operation: equal, substitute, delete, insert"
+        - name: token_logprob
+          type: float
+          description: Whisper token log probability for the hypothesis word
+        - name: classification
+          type: string
+          description: "Human annotation: faithful_dialect or hallucination"
+        - name: cause
+          type: string
+          description: "Cause label: phonetic, dialect_normalization, code_switch, noise"
+
+# Intended use
+intended_uses:
+  - Measuring how much standard WER overestimates ASR errors for dialect-rich speech
+  - Comparing dialect-handling ability across ASR models
+  - Training classifiers to distinguish faithful dialect variants from real errors
+  - Developing dialect-aware evaluation metrics

@@ -1,0 +1,35 @@
+paths:
+  model_dir: ""
+  eval_output_dir: "eval_outputs"
+
+training:
+  language: "en"
+  task: "transcribe"
+  whisper_sample_rate: 16000
+
+evaluation:
+  batch_size: 4
+  generation_max_length: 225
+
+benchmark:
+  output_dir: "data/kaggle_benchmark"
+  n_samples: 500
+  seed: 42
+  models:
+    whisper-large-v3: "openai/whisper-large-v3"
+    whisper-small: "openai/whisper-small"
+    naija-finetuned: "nadinev/naija-voice-model"
+  model_display_names:
+    whisper-large-v3: "Whisper Large v3 (zero-shot)"
+    whisper-small: "Whisper Small (zero-shot)"
+    naija-finetuned: "Accent Labs fine-tuned"
+  dialect_distribution:
+    igbo: 130
+    yoruba: 130
+    hausa: 100
+    pidgin: 100
+    multilingual: 40
+  max_per_speaker: 15
+  annotation:
+    guide: "data/kaggle_benchmark/annotations/annotation_guide.md"
+    alignment: "data/kaggle_benchmark/annotations/word_alignment.csv"
