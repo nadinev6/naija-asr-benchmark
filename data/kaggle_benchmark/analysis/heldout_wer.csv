@@ -1,0 +1,4 @@
+model_id,held_out_wer,n
+naija-finetuned,0.0711,160
+whisper-large-v3,0.395,160
+whisper-small,0.4452,160

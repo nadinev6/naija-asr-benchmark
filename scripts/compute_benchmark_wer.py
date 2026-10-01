@@ -18,6 +18,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -29,6 +30,10 @@ if str(_SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS_DIR))
 
 from accent_labs_config import REPO_ROOT, load_config, resolve_path
+
+
+def _strip_punctuation(text: str) -> str:
+    return re.sub(r"[^\w\s]", "", text)
 
 
 def compute_word_alignment(
@@ -45,13 +50,13 @@ def compute_word_alignment(
     of reference vs hypothesis words. Returns one row per reference word,
     plus rows for inserted hypothesis words.
     """
-    ref_lower = reference.lower().strip()
-    hyp_lower = hypothesis.lower().strip()
+    ref_clean = _strip_punctuation(reference.lower().strip())
+    hyp_clean = _strip_punctuation(hypothesis.lower().strip())
 
-    if not ref_lower:
+    if not ref_clean:
         return []
 
-    measures = jiwer.process_words(ref_lower, hyp_lower)
+    measures = jiwer.process_words(ref_clean, hyp_clean)
 
     # measures.references: [[ref_word0, ref_word1, ...]]  (one inner list per segment)
     # measures.hypotheses: [[hyp_word0, hyp_word1, ...]]
@@ -186,7 +191,7 @@ def main() -> None:
 
             # Compute WER for this sample
             try:
-                sample_wer = jiwer.wer(ref_text, hyp_text)
+                sample_wer = jiwer.wer(_strip_punctuation(ref_text), _strip_punctuation(hyp_text))
             except Exception:
                 sample_wer = 1.0
 
@@ -253,7 +258,7 @@ def main() -> None:
             if hyp_text.startswith("[ERROR"):
                 continue
             try:
-                w = jiwer.wer(ref_text, hyp_text)
+                w = jiwer.wer(_strip_punctuation(ref_text), _strip_punctuation(hyp_text))
             except Exception:
                 w = 1.0
             accent_wer[accent].append(w)
