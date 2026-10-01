@@ -10,15 +10,11 @@ A dialect-aware ASR error taxonomy benchmark for Nigerian English and Pidgin —
 
 ## Results
 
-| Metric | Whisper large-v3 | Whisper small | Accent Labs fine-tuned |
-|--------|---------:|--------:|--------:|
-| Raw WER (original, unfixed — 500 samples) | 41.92% | 48.00% | 11.11% |
-| Raw WER (punctuation stripped — 500 samples) | 35.05% | 41.19% | 8.30% |
-| Raw WER (punctuation stripped — 160 held-out) | 39.50% | 44.52% | 7.11% |
-| Faithful WER | 35.05% | 41.19% | 8.00% |
-| Dialect Penalty | 0.00 | 0.00 | 0.30 |
-| Hallucination Rate | 100.0% | 100.0% | 96.43% |
-| Normalization Overcorrection | 23.5% | 18.5% | 10.2% |
+| Measurement | Whisper large-v3 | Whisper small | Accent Labs fine-tuned |
+|------------|---------:|--------:|--------:|
+| Original (unfixed — 500 samples) | 41.92% | 48.00% | 11.11% |
+| Punctuation stripped — 500 samples | 35.05% | 41.19% | 8.30% |
+| Punctuation stripped — 160 held-out | 39.50% | 44.52% | 7.11% |
 
 ## Setup
 
