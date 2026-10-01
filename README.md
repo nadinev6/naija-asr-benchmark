@@ -1,8 +1,8 @@
 # Naija ASR Benchmark
 
-<p align="center">
-  <img src="header.webp" alt="Naija ASR Benchmark" width="100%" style="border: 2px solid #ccc; border-radius: 8px; max-width: 900px;">
-</p>
+<div align="center" style="border: 2px solid #ccc; border-radius: 8px; padding: 4px; max-width: 900px;">
+  <img src="header.webp" alt="Naija ASR Benchmark" width="100%">
+</div>
 
 [![Kaggle Benchmarking Challenge](https://img.shields.io/badge/Kaggle-Benchmarking%20Challenge-blue)](https://dev.to/challenges/kaggle-2026-09-23)
 
@@ -12,11 +12,12 @@ A dialect-aware ASR error taxonomy benchmark for Nigerian English and Pidgin —
 
 | Metric | Whisper large-v3 | Whisper small | Accent Labs fine-tuned |
 |--------|---------:|--------:|--------:|
-| Raw WER | 41.92% | 48.00% | 11.11% |
-| Faithful WER | 41.92% | 48.00% | 10.81% |
-| Dialect Penalty | 0.00% | 0.00% | 0.30% |
-| Hallucination Rate | 100.0% | 100.0% | 97.34% |
-| Normalization Overcorrection | 18.5% | 14.7% | 7.7% |
+| Raw WER (500 samples, corrected) | 35.05% | 41.19% | 8.30% |
+| Raw WER (160 held-out samples) | 39.50% | 44.52% | 7.11% |
+| Faithful WER | 35.05% | 41.19% | 8.00% |
+| Dialect Penalty | 0.00 | 0.00 | 0.30 |
+| Hallucination Rate | 100.0% | 100.0% | 96.43% |
+| Normalization Overcorrection | 23.5% | 18.5% | 10.2% |
 
 ## Setup
 
