@@ -1,0 +1,142 @@
+section,model_id,accent_background,metric,value
+summary,Accent Labs fine-tuned,overall,raw_wer,8.30
+summary,Accent Labs fine-tuned,overall,faithful_wer,8.00
+summary,Accent Labs fine-tuned,overall,dialect_penalty,0.30
+summary,Accent Labs fine-tuned,overall,hallucination_rate,96.4
+summary,Accent Labs fine-tuned,overall,overcorrection_pct,10.6
+summary,Whisper large-v3,overall,raw_wer,35.05
+summary,Whisper large-v3,overall,faithful_wer,35.05
+summary,Whisper large-v3,overall,dialect_penalty,0.00
+summary,Whisper large-v3,overall,hallucination_rate,100.0
+summary,Whisper large-v3,overall,overcorrection_pct,23.5
+summary,Whisper small,overall,raw_wer,41.19
+summary,Whisper small,overall,faithful_wer,41.19
+summary,Whisper small,overall,dialect_penalty,0.00
+summary,Whisper small,overall,hallucination_rate,100.0
+summary,Whisper small,overall,overcorrection_pct,18.5
+per_dialect,Whisper large-v3,hausa,raw_wer,35.41
+per_dialect,Whisper large-v3,hausa,dialect_penalty,0.0000
+per_dialect,Whisper large-v3,hausa,total_words,1881
+per_dialect,Whisper large-v3,hausa,total_errors,666
+per_dialect,Whisper large-v3,hausa,hallucinations,666
+per_dialect,Whisper large-v3,hausa,faithful_variants,0
+per_dialect,Whisper large-v3,hausa,overcorrection_rate,19.8
+per_dialect,Whisper large-v3,igbo,raw_wer,35.38
+per_dialect,Whisper large-v3,igbo,dialect_penalty,0.0000
+per_dialect,Whisper large-v3,igbo,total_words,2117
+per_dialect,Whisper large-v3,igbo,total_errors,749
+per_dialect,Whisper large-v3,igbo,hallucinations,749
+per_dialect,Whisper large-v3,igbo,faithful_variants,0
+per_dialect,Whisper large-v3,igbo,overcorrection_rate,27.4
+per_dialect,Whisper large-v3,multilingual,raw_wer,27.65
+per_dialect,Whisper large-v3,multilingual,dialect_penalty,0.0000
+per_dialect,Whisper large-v3,multilingual,total_words,557
+per_dialect,Whisper large-v3,multilingual,total_errors,154
+per_dialect,Whisper large-v3,multilingual,hallucinations,154
+per_dialect,Whisper large-v3,multilingual,faithful_variants,0
+per_dialect,Whisper large-v3,multilingual,overcorrection_rate,31.2
+per_dialect,Whisper large-v3,pidgin,raw_wer,35.02
+per_dialect,Whisper large-v3,pidgin,dialect_penalty,0.0000
+per_dialect,Whisper large-v3,pidgin,total_words,1402
+per_dialect,Whisper large-v3,pidgin,total_errors,491
+per_dialect,Whisper large-v3,pidgin,hallucinations,491
+per_dialect,Whisper large-v3,pidgin,faithful_variants,0
+per_dialect,Whisper large-v3,pidgin,overcorrection_rate,27.1
+per_dialect,Whisper large-v3,yoruba,raw_wer,36.51
+per_dialect,Whisper large-v3,yoruba,dialect_penalty,0.0000
+per_dialect,Whisper large-v3,yoruba,total_words,1912
+per_dialect,Whisper large-v3,yoruba,total_errors,698
+per_dialect,Whisper large-v3,yoruba,hallucinations,698
+per_dialect,Whisper large-v3,yoruba,faithful_variants,0
+per_dialect,Whisper large-v3,yoruba,overcorrection_rate,18.8
+per_dialect,Whisper small,hausa,raw_wer,41.86
+per_dialect,Whisper small,hausa,dialect_penalty,0.0000
+per_dialect,Whisper small,hausa,total_words,1897
+per_dialect,Whisper small,hausa,total_errors,794
+per_dialect,Whisper small,hausa,hallucinations,794
+per_dialect,Whisper small,hausa,faithful_variants,0
+per_dialect,Whisper small,hausa,overcorrection_rate,16.1
+per_dialect,Whisper small,igbo,raw_wer,42.92
+per_dialect,Whisper small,igbo,dialect_penalty,0.0000
+per_dialect,Whisper small,igbo,total_words,2125
+per_dialect,Whisper small,igbo,total_errors,912
+per_dialect,Whisper small,igbo,hallucinations,912
+per_dialect,Whisper small,igbo,faithful_variants,0
+per_dialect,Whisper small,igbo,overcorrection_rate,19.6
+per_dialect,Whisper small,multilingual,raw_wer,33.69
+per_dialect,Whisper small,multilingual,dialect_penalty,0.0000
+per_dialect,Whisper small,multilingual,total_words,555
+per_dialect,Whisper small,multilingual,total_errors,187
+per_dialect,Whisper small,multilingual,hallucinations,187
+per_dialect,Whisper small,multilingual,faithful_variants,0
+per_dialect,Whisper small,multilingual,overcorrection_rate,20.9
+per_dialect,Whisper small,pidgin,raw_wer,40.23
+per_dialect,Whisper small,pidgin,dialect_penalty,0.0000
+per_dialect,Whisper small,pidgin,total_words,1412
+per_dialect,Whisper small,pidgin,total_errors,568
+per_dialect,Whisper small,pidgin,hallucinations,568
+per_dialect,Whisper small,pidgin,faithful_variants,0
+per_dialect,Whisper small,pidgin,overcorrection_rate,20.9
+per_dialect,Whisper small,yoruba,raw_wer,41.49
+per_dialect,Whisper small,yoruba,dialect_penalty,0.0000
+per_dialect,Whisper small,yoruba,total_words,1916
+per_dialect,Whisper small,yoruba,total_errors,795
+per_dialect,Whisper small,yoruba,hallucinations,795
+per_dialect,Whisper small,yoruba,faithful_variants,0
+per_dialect,Whisper small,yoruba,overcorrection_rate,17.2
+per_dialect,Accent Labs fine-tuned,hausa,raw_wer,9.81
+per_dialect,Accent Labs fine-tuned,hausa,dialect_penalty,0.1600
+per_dialect,Accent Labs fine-tuned,hausa,total_words,1856
+per_dialect,Accent Labs fine-tuned,hausa,total_errors,182
+per_dialect,Accent Labs fine-tuned,hausa,hallucinations,179
+per_dialect,Accent Labs fine-tuned,hausa,faithful_variants,3
+per_dialect,Accent Labs fine-tuned,hausa,overcorrection_rate,6.2
+per_dialect,Accent Labs fine-tuned,igbo,raw_wer,7.75
+per_dialect,Accent Labs fine-tuned,igbo,dialect_penalty,0.4300
+per_dialect,Accent Labs fine-tuned,igbo,total_words,2104
+per_dialect,Accent Labs fine-tuned,igbo,total_errors,163
+per_dialect,Accent Labs fine-tuned,igbo,hallucinations,154
+per_dialect,Accent Labs fine-tuned,igbo,faithful_variants,9
+per_dialect,Accent Labs fine-tuned,igbo,overcorrection_rate,20.1
+per_dialect,Accent Labs fine-tuned,multilingual,raw_wer,3.84
+per_dialect,Accent Labs fine-tuned,multilingual,dialect_penalty,0.1800
+per_dialect,Accent Labs fine-tuned,multilingual,total_words,547
+per_dialect,Accent Labs fine-tuned,multilingual,total_errors,21
+per_dialect,Accent Labs fine-tuned,multilingual,hallucinations,20
+per_dialect,Accent Labs fine-tuned,multilingual,faithful_variants,1
+per_dialect,Accent Labs fine-tuned,multilingual,overcorrection_rate,5.0
+per_dialect,Accent Labs fine-tuned,pidgin,raw_wer,7.46
+per_dialect,Accent Labs fine-tuned,pidgin,dialect_penalty,0.1400
+per_dialect,Accent Labs fine-tuned,pidgin,total_words,1381
+per_dialect,Accent Labs fine-tuned,pidgin,total_errors,103
+per_dialect,Accent Labs fine-tuned,pidgin,hallucinations,101
+per_dialect,Accent Labs fine-tuned,pidgin,faithful_variants,2
+per_dialect,Accent Labs fine-tuned,pidgin,overcorrection_rate,9.9
+per_dialect,Accent Labs fine-tuned,yoruba,raw_wer,9.34
+per_dialect,Accent Labs fine-tuned,yoruba,dialect_penalty,0.4200
+per_dialect,Accent Labs fine-tuned,yoruba,total_words,1884
+per_dialect,Accent Labs fine-tuned,yoruba,total_errors,176
+per_dialect,Accent Labs fine-tuned,yoruba,hallucinations,168
+per_dialect,Accent Labs fine-tuned,yoruba,faithful_variants,8
+per_dialect,Accent Labs fine-tuned,yoruba,overcorrection_rate,7.7
+cause_distribution,Whisper large-v3,overall,phonetic_pct,71.1
+cause_distribution,Whisper large-v3,overall,dialect_norm_pct,23.5
+cause_distribution,Whisper large-v3,overall,noise_pct,5.4
+cause_distribution,Whisper large-v3,overall,phonetic_count,1960
+cause_distribution,Whisper large-v3,overall,dialect_norm_count,649
+cause_distribution,Whisper large-v3,overall,noise_count,149
+cause_distribution,Whisper small,overall,phonetic_pct,75.8
+cause_distribution,Whisper small,overall,dialect_norm_pct,18.5
+cause_distribution,Whisper small,overall,noise_pct,5.7
+cause_distribution,Whisper small,overall,phonetic_count,2469
+cause_distribution,Whisper small,overall,dialect_norm_count,602
+cause_distribution,Whisper small,overall,noise_count,185
+cause_distribution,Accent Labs fine-tuned,overall,phonetic_pct,81.0
+cause_distribution,Accent Labs fine-tuned,overall,dialect_norm_pct,10.6
+cause_distribution,Accent Labs fine-tuned,overall,noise_pct,8.4
+cause_distribution,Accent Labs fine-tuned,overall,phonetic_count,504
+cause_distribution,Accent Labs fine-tuned,overall,dialect_norm_count,66
+cause_distribution,Accent Labs fine-tuned,overall,noise_count,52
+heldout,Whisper large-v3,overall,raw_wer,39.50
+heldout,Whisper small,overall,raw_wer,44.52
+heldout,Accent Labs fine-tuned,overall,raw_wer,7.11
